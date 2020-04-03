@@ -103,7 +103,7 @@ resource "aws_security_group" "web-sg" {
 
 # Create instance 1
 resource "aws_instance" "webserver" {
-  ami               = "ami-428aa838"
+  ami               = "ami-0fc61db8544a617ed"
   instance_type     = "t2.micro"
   availability_zone = "us-east-1e"
   key_name          = "amazonvm"
