@@ -1,5 +1,5 @@
 #!/bin/bash -xe
-yum update -y
+yum upgrade -y
 yum install -y git httpd
 chkconfig --levels 235 httpd on
 echo "# Nothing in here" > /etc/httpd/conf.d/welcome.conf
