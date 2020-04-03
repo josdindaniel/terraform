@@ -102,7 +102,7 @@ resource "aws_security_group" "web-sg" {
 }
 
 # Create instance 1
-resource "aws_instance" "webserver2" {
+resource "aws_instance" "webserver" {
   ami               = "ami-428aa838"
   instance_type     = "t2.micro"
   availability_zone = "us-east-1e"
@@ -111,7 +111,7 @@ resource "aws_instance" "webserver2" {
   security_groups   = [aws_security_group.web-sg.id]
   user_data         = data.template_file.init.rendered
   tags = {
-    Name = "webserver"
+    Name = "webserver2"
   }
 }
 
