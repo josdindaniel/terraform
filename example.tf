@@ -102,7 +102,7 @@ resource "aws_security_group" "web-sg" {
 }
 
 # Create instance 1
-resource "aws_instance" "webserver" {
+resource "aws_instance" "webserver2" {
   ami               = "ami-428aa838"
   instance_type     = "t2.micro"
   availability_zone = "us-east-1e"
