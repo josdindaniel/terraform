@@ -111,7 +111,7 @@ resource "aws_instance" "webserver" {
   security_groups   = [aws_security_group.web-sg.id]
   user_data         = data.template_file.init.rendered
   tags = {
-    Name = "webserver1"
+    Name = "webserver"
   }
 }
 
